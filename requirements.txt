@@ -1,0 +1,86 @@
+# ============================================================================
+# MEDICAL CODING SYSTEM - PYTHON DEPENDENCIES
+# ============================================================================
+
+# Core Framework
+python-dotenv
+pydantic
+
+# Azure OpenAI & LLM
+openai
+langchain
+langchain-openai
+langchain-community
+
+# Vector Database
+chromadb
+
+# Document Processing
+PyPDF2
+pymupdf
+pdfplumber
+python-docx
+openpyxl
+pandas
+xlrd
+
+# OCR (Optional)
+pytesseract
+pdf2image
+
+# Data Processing & Analysis
+numpy
+scipy
+
+# Web Framework (Streamlit UI)
+streamlit
+streamlit-option-menu
+
+# API Framework (Optional)
+fastapi
+uvicorn
+pydantic
+
+# HTTP Requests
+requests
+beautifulsoup4
+httpx
+
+# Database (Optional)
+psycopg2-binary
+sqlalchemy
+
+# Utilities
+tqdm
+colorama
+python-dateutil
+
+# Testing
+pytest
+pytest-asyncio
+pytest-cov
+
+# Code Quality
+black
+flake8
+mypy
+
+# Logging & Monitoring
+loguru
+
+# Security
+cryptography
+
+# CLI
+click
+typer
+
+# ============================================================================
+# INSTALLATION INSTRUCTIONS
+# ============================================================================
+# Install all dependencies:
+#   pip install -r requirements.txt
+#
+# For development (includes testing & code quality tools):
+#   pip install -r requirements.txt
+# ============================================================================

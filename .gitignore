@@ -1,0 +1,224 @@
+# ============================================================================
+# MEDICAL CODING SYSTEM - GIT IGNORE
+# ============================================================================
+
+# ----------------------------------------------------------------------------
+# 1. ENVIRONMENT & SECRETS
+# ----------------------------------------------------------------------------
+.env
+.env.local
+.env.production
+*.key
+*.pem
+secrets/
+credentials/
+
+# ----------------------------------------------------------------------------
+# 2. PYTHON
+# ----------------------------------------------------------------------------
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# pyenv
+.python-version
+
+# Virtual environments
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+.venv/
+
+# ----------------------------------------------------------------------------
+# 3. DATA FILES (Sensitive Medical Data)
+# ----------------------------------------------------------------------------
+# Raw CMS downloads
+data/raw/**/*.zip
+data/raw/**/*.txt
+data/raw/**/*.xml
+data/raw/**/*.csv
+
+# Processed data (keep structure, ignore data)
+data/processed/*.csv
+data/processed/*.xlsx
+data/processed/*.json
+
+# User uploads (HIPAA sensitive)
+data/uploads/*
+!data/uploads/.gitkeep
+
+# Generated outputs
+data/outputs/*
+!data/outputs/.gitkeep
+
+# Cache
+data/cache/*
+!data/cache/.gitkeep
+
+# ----------------------------------------------------------------------------
+# 4. VECTOR DATABASE
+# ----------------------------------------------------------------------------
+vector_db/.chroma_production/
+vector_db/**/*.sqlite3
+vector_db/**/*.db
+*.chroma
+
+# ----------------------------------------------------------------------------
+# 5. LOGS
+# ----------------------------------------------------------------------------
+logs/
+*.log
+*.log.*
+
+# ----------------------------------------------------------------------------
+# 6. IDE & EDITORS
+# ----------------------------------------------------------------------------
+# VSCode
+.vscode/
+*.code-workspace
+
+# PyCharm
+.idea/
+*.iml
+*.iws
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+*.swp
+*.swo
+*~
+
+# Emacs
+*~
+\#*\#
+.\#*
+
+# ----------------------------------------------------------------------------
+# 7. OPERATING SYSTEM
+# ----------------------------------------------------------------------------
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+.directory
+.Trash-*
+
+# ----------------------------------------------------------------------------
+# 8. STREAMLIT
+# ----------------------------------------------------------------------------
+.streamlit/secrets.toml
+.streamlit/credentials.toml
+
+# ----------------------------------------------------------------------------
+# 9. DOCKER
+# ----------------------------------------------------------------------------
+*.dockerignore.swp
+
+# ----------------------------------------------------------------------------
+# 10. TEMPORARY FILES
+# ----------------------------------------------------------------------------
+*.tmp
+*.temp
+*.bak
+*.backup
+tmp/
+temp/
+
+# ----------------------------------------------------------------------------
+# 11. MEDICAL DATA (HIPAA Compliance)
+# ----------------------------------------------------------------------------
+# Never commit patient data
+*patient*
+*phi*
+*medical_records*
+*health_info*
+
+# ----------------------------------------------------------------------------
+# 12. LARGE FILES
+# ----------------------------------------------------------------------------
+*.pdf
+*.zip
+*.tar
+*.tar.gz
+*.rar
+
+# ----------------------------------------------------------------------------
+# 13. TESTING
+# ----------------------------------------------------------------------------
+.pytest_cache/
+test-results/
+
+# ----------------------------------------------------------------------------
+# 14. DOCUMENTATION BUILD
+# ----------------------------------------------------------------------------
+docs/_build/
+docs/.doctrees/
+
+# ----------------------------------------------------------------------------
+# 15. KEEP DIRECTORY STRUCTURE
+# ----------------------------------------------------------------------------
+# Use .gitkeep files to maintain empty directories
+!.gitkeep
+
+# ============================================================================
+# END OF .gitignore
+# ============================================================================
